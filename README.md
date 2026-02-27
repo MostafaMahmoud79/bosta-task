@@ -49,9 +49,9 @@ Live demo: [Bosta on Vercel](https://bosta-task-teal.vercel.app/)
 ## Project Overview
 
 This project is a **production-ready e-commerce frontend** built with **Next.js 15** and modern React tooling.  
-It fully integrates with the **Fake Store API** and demonstrates skills in component architecture, API integration, global state management, and responsive UI design.
+It fully integrates with the **Fake Store API** and demonstrates **my skills** in component architecture, API integration, global state management, and responsive UI design.
 
-**Everything required is implemented, including all bonus features.**
+**Everything required is implemented by me, including all bonus features.**
 
 The application includes:
 
@@ -61,7 +61,7 @@ The application includes:
 - **Authentication:** Email-based signup/login, per-user session, name in header  
 - **Cart:** Per-user cart with quantity updates, removal, total price calculation  
 - **Protected Routes:** Cart and Create Product require authentication  
-- **Instant UX:** No page refresh required for cart updates or new products  
+- **Instant UX:** I ensured no page refresh is required for cart updates or new products  
 - **Responsive Design:** Works on mobile, tablet, laptop, and desktop  
 
 ---
@@ -104,7 +104,7 @@ The application includes:
 - Newly created products appear immediately in listing  
 
 **Protected Routes**
-- Redirects unauthenticated users to `/login` for Cart and Create Product  
+- I implemented redirects for unauthenticated users to `/login` for Cart and Create Product  
 
 ---
 
