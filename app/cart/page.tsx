@@ -172,11 +172,11 @@ export default function CartPage() {
               }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
                   <button
-                    onClick={() => updateQuantity(product.id, quantity - 1)}
-                    style={qtyBtn}
-                    aria-label="Decrease quantity"
-                  >
-                    <Minus size={11} />
+                        onClick={() => updateQuantity(product.id, quantity - 1)}
+                        style={qtyBtn}
+                        aria-label="Decrease quantity"
+                               >
+                      <Minus size={11} />
                   </button>
                   <span style={{
                     fontSize: "13px",

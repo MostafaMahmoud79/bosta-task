@@ -29,11 +29,13 @@ export default function CreateProductPage() {
   const [success, setSuccess] = useState(false);
 
   const {
-    register,
-    handleSubmit,
-    formState: { errors, isSubmitting },
-    reset,
-  } = useForm<FormData>({ resolver: zodResolver(schema) });
+  register,
+  handleSubmit,
+  formState: { errors, isSubmitting },
+  reset,
+} = useForm<z.infer<typeof schema>>({
+  resolver: zodResolver(schema) as any,
+});
 
   useEffect(() => {
     if (isHydrated && !isAuthenticated) {
@@ -47,22 +49,22 @@ export default function CreateProductPage() {
       .catch(() => {});
   }, []);
 
-  const onSubmit = async (data: FormData) => {
-    if (!email) return;
-    addLocalProduct(
-      {
-        title: data.title,
-        description: data.description,
-        price: data.price,
-        category: data.category,
-        image: data.image,
-      },
-      email
-    );
-    setSuccess(true);
-    reset();
-    setTimeout(() => setSuccess(false), 4000);
-  };
+  const onSubmit: (data: z.infer<typeof schema>) => Promise<void> = async (data) => {
+  if (!email) return;
+  addLocalProduct(
+    {
+      title: data.title,
+      description: data.description,
+      price: data.price,
+      category: data.category,
+      image: data.image,
+    },
+    email
+  );
+  setSuccess(true);
+  reset();
+  setTimeout(() => setSuccess(false), 4000);
+};
 
   if (!isHydrated) {
     return (

@@ -30,10 +30,12 @@ export default function ProductDetailPage() {
     const numId = Number(id);
     const stored = allProducts.find((p) => p.id === numId);
     if (stored) {
-      setProduct(stored);
-      setLoading(false);
-      return;
-    }
+  setTimeout(() => {
+    setProduct(stored);
+    setLoading(false);
+  }, 0);
+  return;
+}
 
 
     fetchProductById(id)
