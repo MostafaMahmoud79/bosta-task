@@ -1,28 +1,48 @@
 # Bosta — Frontend Technical Assessment
 
-Live demo: [Bosta on Vercel]()
+Live demo: [Bosta on Vercel](https://bosta-task-teal.vercel.app/)
 
 ---
 
 ## Screenshots
 
+![Bosta](bosta.png)  
+
+###  
+
+---
+
 ![Products Page](products.png)  
 
 ###  
+
+---
 
 ![Product Details](details.png)  
 
 ###  
 
+---
+
 ![Create Product](create.png)  
 
 ###  
+
+---
 
 ![Cart](cart.png)  
 
 ###  
 
+---
+
 ![Login](login.png)  
+
+###  
+
+---
+
+![Signup](signup.png)  
 
 ---
 
